@@ -20,3 +20,7 @@ python manage.py runsserver
 ```
 
 For working with database you can use [litecli](https://github.com/dbcli/litecli) which is available as a development package.
+
+```bash
+python manage.py createsuperuser
+```
