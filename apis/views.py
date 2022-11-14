@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import generics
 
-# Create your views here.
+from hello.models import Helloer
+from .serializers import HelloSerializer
+
+
+class HelloerAPIView(generics.ListAPIView):
+    queryset = Helloer.objects.all()
+    serializer_class = HelloSerializer
