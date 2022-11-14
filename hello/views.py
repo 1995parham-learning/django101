@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.views import generic
 
-# Create your views here.
+from .models import Helloer
+
+
+class HelloerListView(generic.ListView):
+    model = Helloer
+    template_name = "list.html"
