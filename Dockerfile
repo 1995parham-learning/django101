@@ -4,6 +4,7 @@ RUN apk --no-cache add build-base
 
 WORKDIR /app
 
+COPY . .
 RUN pip install --no-cache-dir --upgrade pipenv \
   && pipenv install --system
 
@@ -12,4 +13,4 @@ RUN rm -rf /var/cache/apk/*
 
 EXPOSE 8080
 
-ENTRYPOINT ["python", "manage.py", "migrate", "&&", "gunicorn", "django101.wsgi", "--log-file", "-"]
+ENTRYPOINT ["sh", "-c", "python manage.py migrate && gunicorn django101.wsgi --log-file -"]
