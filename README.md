@@ -24,3 +24,11 @@ For working with database you can use [litecli](https://github.com/dbcli/litecli
 ```bash
 python manage.py createsuperuser
 ```
+
+## On Production :rocket
+
+For running Django on production it is better to use [gunicorn]().
+
+```bash
+gunicorn django101.wsgi --log-file -
+```
