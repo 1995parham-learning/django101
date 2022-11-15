@@ -27,7 +27,7 @@ python manage.py createsuperuser
 
 ## On Production :rocket
 
-For running Django on production it is better to use [gunicorn]().
+For running Django on production it is better to use [gunicorn](https://gunicorn.org/).
 
 ```bash
 gunicorn django101.wsgi --log-file -
