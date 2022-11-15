@@ -25,6 +25,16 @@ For working with database you can use [litecli](https://github.com/dbcli/litecli
 python manage.py createsuperuser
 ```
 
+## CURLs
+
+```bash
+# retrieve helloer with id equals to 1
+curl 127.0.0.1:8000/api/1/
+
+# retrieve all available helloers
+curl 127.0.0.1:8000/api/
+```
+
 ## On Production :rocket
 
 For running Django on production it is better to use [gunicorn](https://gunicorn.org/).
