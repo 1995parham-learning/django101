@@ -13,4 +13,4 @@ RUN rm -rf /var/cache/apk/*
 
 EXPOSE 8080
 
-ENTRYPOINT ["sh", "-c", "python manage.py migrate && gunicorn django101.wsgi --log-file -"]
+ENTRYPOINT ["sh", "-c", "python manage.py migrate && gunicorn --bind 0.0.0.0:1378 django101.wsgi --log-file -"]
