@@ -16,7 +16,7 @@ pipenv shell
 
 ```bash
 python manage.py migrate
-python manage.py runsserver
+python manage.py runserver
 ```
 
 For working with database you can use [litecli](https://github.com/dbcli/litecli) which is available as a development package.
