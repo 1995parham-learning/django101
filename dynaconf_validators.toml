@@ -1,5 +1,5 @@
 [default]
 
-[default.NAME]
+[default.SUBJECT]
 must_exist = true
-len_min = 10
+len_min = 1
