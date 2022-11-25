@@ -1,9 +1,12 @@
+import logging
 from rest_framework import generics, views
 
 from hello.models import Helloer
 from .serializers import HelloSerializer, MessageSerilizer
 from .responses import Message
 from django101.settings import settings
+
+logger = logging.getLogger("project")
 
 
 class HelloerList(generics.ListAPIView):
@@ -18,6 +21,8 @@ class HelloerDetail(generics.RetrieveAPIView):
 
 class SayHello(views.APIView):
     def get(self, request: views.Request, pk: int):
+        logger.info("request from {}", request)
+
         try:
             helloer = Helloer.objects.get(id=pk)
         except Helloer.DoesNotExist:
