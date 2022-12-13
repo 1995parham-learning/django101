@@ -16,8 +16,7 @@ django-admin startproject django101
 and then you can create applications:
 
 ```bash
-python manage.py startapp hello
-python manage.py startapp apis
+python manage.py startapp blog
 ```
 
 please note that you need to write down the applications in `/django101/settings.py`
