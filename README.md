@@ -1,5 +1,7 @@
 <h1 align="center">Let's Learn Django</h1>
 
+<h6 align="center">Django makes it easier to build better web apps more quickly and with less code</h6>
+
 <p align="center">
   <img src="https://img.shields.io/github/workflow/status/1995parham-learning/django101/ci?label=ci&logo=github&style=for-the-badge" alt="GitHub Workflow Status">
   <img alt="GitHub Pipenv locked Python version" src="https://img.shields.io/github/pipenv/locked/python-version/1995parham-learning/django101?logo=python&style=for-the-badge">
