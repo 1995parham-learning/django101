@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     # Third parties
     "rest_framework",
     # Local
-    "hello.apps.HelloConfig",
-    "apis.apps.ApisConfig",
+    "blog.apps.BlogConfig",
 ]
 
 MIDDLEWARE = [
