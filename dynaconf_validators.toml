@@ -1,5 +1,0 @@
-[default]
-
-[default.SUBJECT]
-must_exist = true
-len_min = 1
