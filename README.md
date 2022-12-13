@@ -24,7 +24,7 @@ under the variable named `INSTALLED_APPS`.
 
 ## How to run?
 
-This application is very simple so it uses [sqlite](https://www.sqlite.org/index.html).
+This application is very simple so it uses [SQLite](https://www.sqlite.org/index.html).
 
 ```bash
 pipenv install
@@ -40,16 +40,6 @@ For working with database you can use [litecli](https://github.com/dbcli/litecli
 
 ```bash
 python manage.py createsuperuser
-```
-
-## CURLs
-
-```bash
-# retrieve helloer with id equals to 1
-curl 127.0.0.1:8000/api/1/
-
-# retrieve all available helloers
-curl 127.0.0.1:8000/api/
 ```
 
 ## On Production :rocket
