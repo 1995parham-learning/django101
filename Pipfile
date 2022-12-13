@@ -11,7 +11,7 @@ dynaconf = "*"
 
 [dev-packages]
 litecli = "*"
-django-stubs = {extras = ["compatible-mypy"], version = "*"}
+django-stubs = { extras = ["compatible-mypy"], version = "*" }
 
 [requires]
 python_version = "3.10"
