@@ -14,6 +14,7 @@ litecli = "*"
 django-stubs = { extras = ["compatible-mypy"], version = "*" }
 black = "*"
 pylint = "*"
+djlint = "*"
 
 [requires]
 python_version = "3.10"
