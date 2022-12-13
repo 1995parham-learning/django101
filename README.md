@@ -42,7 +42,7 @@ For working with database you can use [litecli](https://github.com/dbcli/litecli
 python manage.py createsuperuser
 ```
 
-## On Production :rocket
+## On Production 🚀
 
 For running Django on production it is better to use [gunicorn](https://gunicorn.org/).
 
