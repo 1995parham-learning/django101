@@ -9,6 +9,6 @@ def post_list(request: HttpRequest):
     return render(request, "blog/post/list.html", {"posts": posts})
 
 
-def post_detail(request: HttpRequest, id: int):
-    post = get_object_or_404(Post.published, id=id)
+def post_detail(request: HttpRequest, pk: int):
+    post = get_object_or_404(Post.published, id=pk)
     return render(request, "blog/post/detail.html", {"post": post})
