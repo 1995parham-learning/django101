@@ -1,17 +1,15 @@
 from django.http.request import HttpRequest
 from django.shortcuts import get_object_or_404
 from django.shortcuts import render
-from django.core.paginator import Paginator
+from django.views import generic
 from .models import Post
 
 
-def post_list(request: HttpRequest):
-    # pagination with 3 posts per page
-    paginator = Paginator(Post.published.all(), 3)
-    page_number = request.GET.get("page", 1)
-    posts = paginator.page(page_number)
-
-    return render(request, "blog/post/list.html", {"posts": posts})
+class PostListView(generic.ListView):
+    queryset = Post.published.all()
+    context_object_name = "posts"
+    paginate_by = 3
+    template_name = "blog/post/list.html"
 
 
 def post_detail(
