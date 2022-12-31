@@ -1,0 +1,12 @@
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#content {
+  margin: 10px;
+}
+
+#sidecar {
+  margin: 10px;
+}
