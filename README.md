@@ -70,6 +70,12 @@ plugins =
 django_settings_module = "django101.settings"
 ```
 
+Maybe you want to use [django-rest-framework](https://www.django-rest-framework.org/) too for having an awesome ReST API.
+
+```bash
+pipenv install --dev 'djangorestframework-stubs[compatible-mypy]'
+```
+
 ## On Production 🚀
 
 For running Django on production it is better to use [gunicorn](https://gunicorn.org/).
