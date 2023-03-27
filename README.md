@@ -76,6 +76,12 @@ Maybe you want to use [django-rest-framework](https://www.django-rest-framework.
 pipenv install --dev 'djangorestframework-stubs[compatible-mypy]'
 ```
 
+```ini
+[mypy]
+plugins =
+    mypy_django_plugin.main, mypy_drf_plugin.main
+```
+
 ## On Production 🚀
 
 For running Django on production it is better to use [gunicorn](https://gunicorn.org/).
