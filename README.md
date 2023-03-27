@@ -15,7 +15,7 @@ Since then, I use Go more than Python, so I need to refresh my memory and also c
 
 ## Where did it start?
 
-you need first create your django project:
+You need first create your Django project:
 
 ```bash
 django-admin startproject django101
@@ -27,7 +27,7 @@ and then you can create applications:
 python manage.py startapp blog
 ```
 
-please note that you need to write down the applications in `/django101/settings.py`
+Please note that you need to write down the applications in `/django101/settings.py`
 under the variable named `INSTALLED_APPS`.
 
 ## How to run?
@@ -48,6 +48,26 @@ For working with database you can use [litecli](https://github.com/dbcli/litecli
 
 ```bash
 python manage.py createsuperuser
+```
+
+## Better development experience
+
+Having a good language server is an awesome experience that every developer wants.
+[Pyright](https://github.com/microsoft/pyright) seems a good choice to me and for having it work with Django, you can:
+
+```bash
+pipenv install --dev  'django-stubs[compatible-mypy]'
+```
+
+And then you must register it to mypy by add the following into `mypy.ini`:
+
+```ini
+[mypy]
+plugins =
+    mypy_django_plugin.main
+
+[mypy.plugins.django-stubs]
+django_settings_module = "django101.settings"
 ```
 
 ## On Production 🚀
