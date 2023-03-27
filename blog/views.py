@@ -34,6 +34,7 @@ def post_share(request: HttpRequest, post_id: int):
         status=Post.Status.PUBLISHED,
     )
 
+    # pylint: disable=R2004
     if request.method == "POST":
         form = EmailPostForm(request.POST)
         if form.is_valid():
