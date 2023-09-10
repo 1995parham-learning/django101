@@ -18,7 +18,7 @@ Since then, I use Go more than Python, so I need to refresh my memory and also c
 You need first create your Django project:
 
 ```bash
-django-admin startproject django101
+pipx run --spec django==4.2.5 django-admin startproject django101
 ```
 
 and then you can create applications:
