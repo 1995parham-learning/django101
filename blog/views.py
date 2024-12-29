@@ -14,9 +14,7 @@ class PostListView(generic.ListView):
     template_name = "blog/post/list.html"
 
 
-def post_detail(
-    request: HttpRequest, year: int, month: int, day: int, post_slug: str
-):
+def post_detail(request: HttpRequest, year: int, month: int, day: int, post_slug: str):
     post = get_object_or_404(
         Post.published,
         slug=post_slug,
@@ -49,6 +47,4 @@ def post_share(request: HttpRequest, post_id: int):
             send_mail(subject, message, "parham.alvani@gmail.com", [cd["to"]])
     else:
         form = EmailPostForm()
-    return render(
-        request, "blog/post/share.html", {"post": post, "form": form}
-    )
+    return render(request, "blog/post/share.html", {"post": post, "form": form})

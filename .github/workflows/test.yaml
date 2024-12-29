@@ -11,10 +11,9 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.13'
-      - run: pip install pipenv
-      - run: pipenv install --dev -v
-      - run: pipenv run mypy .
-      - run: pipenv run black --config black.toml --check .
-      - run: pipenv run pylint --enable-all-extensions django101
-      - run: pipenv run pylint --enable-all-extensions blog
-      - run: pipenv run python manage.py test
+      - run: pip install uv
+      - run: uv sync --dev -v
+      - run: uv run mypy .
+      - run: uv run ruff check
+      - run: uv run ruff format --check
+      - run: uv run python manage.py test
