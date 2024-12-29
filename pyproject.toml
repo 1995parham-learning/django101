@@ -1,0 +1,19 @@
+[project]
+name = "django101"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.1.4",
+    "djangorestframework>=3.15.2",
+    "dynaconf>=3.2.6",
+    "gunicorn>=23.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "django-stubs>=5.1.1",
+    "djlint>=1.36.4",
+    "ruff>=0.8.4",
+]
