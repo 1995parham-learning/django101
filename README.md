@@ -4,7 +4,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/github/actions/workflow/status/1995parham-learning/django101/test.yaml?label=ci&logo=github&style=for-the-badge&branch=main" alt="GitHub Workflow Status">
-  <img alt="GitHub Pipenv locked Python version" src="https://img.shields.io/github/pipenv/locked/python-version/1995parham-learning/django101?logo=python&style=for-the-badge">
   <img alt="GitHub" src="https://img.shields.io/github/license/1995parham-learning/django101?logo=gnu&style=for-the-badge">
 </p>
 
