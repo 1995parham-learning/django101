@@ -1,7 +1,7 @@
 [project]
 name = "django101"
 version = "0.1.0"
-description = "Add your description here"
+description = "An application with Django with API, Model, etc."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
