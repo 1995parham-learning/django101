@@ -1,5 +1,9 @@
-# Structure
-My sample project was QueryCraft
+# App vs Project Structure
+
+General notes on how Django separates an "app" from a "project" — the example below uses a
+different sample project (QueryCraft) than the `blog`/`django101` layout in this repo, but the
+app-vs-project distinction it illustrates applies the same way here.
+
 ✔️ querycraft/ is a Django APP
 
 This contains:
