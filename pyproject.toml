@@ -18,3 +18,8 @@ dev = [
     "mypy>=1.14.0",
     "ruff>=0.8.4",
 ]
+
+[tool.ruff.lint]
+# Django's admin and Meta options are plain lists by convention (list_display,
+# ordering, fields); RUF012 would want ClassVar on every one of them.
+extend-ignore = ["RUF012"]

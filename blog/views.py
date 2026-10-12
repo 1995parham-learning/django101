@@ -1,10 +1,10 @@
-from django.http.request import HttpRequest
-from django.shortcuts import get_object_or_404
-from django.shortcuts import render
-from django.views import generic
 from django.core.mail import send_mail
-from .models import Post
+from django.http.request import HttpRequest
+from django.shortcuts import get_object_or_404, render
+from django.views import generic
+
 from .forms import EmailPostForm
+from .models import Post
 
 
 class PostListView(generic.ListView):
